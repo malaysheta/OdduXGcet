@@ -3,6 +3,7 @@ import { Employee } from "../models/employee.model.js";
 import { ApiError } from "../utils/ApiError.js";
 import { ApiRespons } from "../utils/ApiRespons.js";
 import { asyncHandler } from "../utils/asyncHandler.js";
+import jwt from "jsonwebtoken";
 
 // Generate employee ID (EMP + timestamp + random)
 const generateEmployeeId = () => {

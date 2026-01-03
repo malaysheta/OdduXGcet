@@ -15,7 +15,7 @@ import {
 const router = Router();
 
 // Public routes
-router.post("/signup", signupValidation, signup);
+router.post("/signup",signupValidation, signup);
 router.post("/signin", signinValidation, signin);
 router.post("/refresh-token", refreshAccessToken);
 

@@ -1,12 +1,13 @@
 class ApiRespons {
   constructor(
-      satatsCode,
+      statusCode,
       data,
       message="Success"
   ){
-    this.satatsCode=satatsCode
+    this.statusCode=statusCode
     this.data=data
     this.message=message
-    this.success=satatsCode < 400
+    this.success=statusCode < 400
   }
 }
+export {ApiRespons}
